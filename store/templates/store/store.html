@@ -6,8 +6,14 @@
 		<div class="box-element product">
 			<h4><strong>{{product.name}}</strong></h4>
 			<hr />
-			<button class="btn btn-outline-secondary add-btn">Add to Cart</button>
-			<a class="btn btn-outline-success" href="#">View</a>
+			<button
+				data-product="{{product.id}}"
+				data-action="add"
+				class="btn btn-outline-secondary add-btn update-cart"
+			>
+				Add to Cart
+			</button>
+			<a class="btn btn-outline-success" href="{% url 'checkout' %}">View</a>
 			<h4 style="display: inline-block; float: right">
 				<strong>${{product.price|floatformat:2}}</strong>
 			</h4>

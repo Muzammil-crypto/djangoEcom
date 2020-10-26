@@ -43,8 +43,8 @@
 					<p class="quantity">{{item.quantity}}</p>
 					<div class="quantity" style="position:relative">
 					
-						<i class="fa fa-sort-desc chg-quantity" aria-hidden="true"></i>
-						<i style="position:absolute;top:8px;left:10px" class="fa fa-sort-asc chg-quantity" aria-hidden="true"></i>
+						<i class="fa fa-sort-desc chg-quantity update-cart" data-product={{item.product.id}} data-action="remove" aria-hidden="true"></i>
+						<i style="position:absolute;top:8px;left:10px" class="fa fa-sort-asc chg-quantity update-cart" data-product={{item.product.id}} data-action="add" aria-hidden="true"></i>
 					</div>
 
 				</div>
