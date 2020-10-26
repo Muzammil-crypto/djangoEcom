@@ -101,6 +101,20 @@
 				return cookieValue;
 			}
 			const csrf_token = getToken("csrftoken");
+
+			function getCookie(name) {
+				let cookieArr = document.cookie.split(";");
+
+				for (var i = 0; i < cookieArr.length; i++) {
+					const cookie = cookies[i].split("=");
+					// Does this cookie string begin with the name we want?
+					if(name==)
+				}
+
+				return null;
+			}
+			var cart = JSON.parse(getCookie("cart"));
+			console.log("Cart", cart);
 		</script>
 	</body>
 </html>
